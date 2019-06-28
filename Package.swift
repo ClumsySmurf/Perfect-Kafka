@@ -20,19 +20,10 @@
 
 import PackageDescription
 
-#if os(Linux)
 let package = Package(
     name: "PerfectKafka",
     dependencies:[
-      .package(url: "https://github.com/PerfectlySoft/Perfect-LinuxBridge.git", majorVersion: 3),
-      .package(url: "https://github.com/PerfectlySoft/Perfect-libKafka.git", majorVersion: 1)
-    ]
-)
-#else
-let package = Package(
-    name: "PerfectKafka",
-    dependencies:[
-      .package(url: "https://github.com/PerfectlySoft/Perfect-libKafka.git", majorVersion: 1)
+      .package(url: "https://github.com/ClumsySmurf/Perfect-libKafka.git", .branch("master"))
     ]
 )
 #endif
