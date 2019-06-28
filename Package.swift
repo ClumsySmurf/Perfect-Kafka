@@ -26,4 +26,4 @@ let package = Package(
       .package(url: "https://github.com/ClumsySmurf/Perfect-libKafka.git", .branch("master"))
     ]
 )
-#endif
+
