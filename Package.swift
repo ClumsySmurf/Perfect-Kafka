@@ -22,6 +22,9 @@ import PackageDescription
 
 let package = Package(
     name: "PerfectKafka",
+    targets: [
+        Target(name: "PerfectKefka")
+    ],
     dependencies:[
       .package(url: "https://github.com/ClumsySmurf/Perfect-libKafka.git", .branch("master"))
     ]
